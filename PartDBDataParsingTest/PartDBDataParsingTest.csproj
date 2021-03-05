@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="2020.3.0" />
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PartDBDataParsing\PartDBDataParsing.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Pentacube.CAx.ECAD.LcadIf">
+      <HintPath>..\PartDBDataParsing\lib\Pentacube.CAx.ECAD.LcadIf.dll</HintPath>
+    </Reference>
+    <Reference Include="Pentacube.Infrastructure">
+      <HintPath>..\PartDBDataParsing\lib\Pentacube.Infrastructure.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
